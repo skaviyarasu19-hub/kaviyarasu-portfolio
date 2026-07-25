@@ -1,0 +1,82 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: #00e5ff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00e5ff;
+}
+
+.resume-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00e5ff, #0077ff);
+  color: black;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  transform: scale(1.05);
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .resume-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+}
